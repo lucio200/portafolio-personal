@@ -5,29 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio | Ricardo Arias</title>
     <meta name="description" content="Portafolio de Ricardo Arias, estudiante de Desarrollo de Software.">
- 
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
- 
+
     <link rel="stylesheet" href="styles.css">
 </head>
- 
+
 <body>
- 
+
     <header class="header" id="header">
         <nav class="navbar">
- 
+
             <a href="#inicio" class="logo">
                 <span class="logo-prompt">~/</span>ricardo-arias
             </a>
- 
+
             <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
- 
+
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#inicio" class="nav-link" data-tab="01">Inicio</a></li>
                 <li><a href="#sobre-mi" class="nav-link" data-tab="02">Sobre mí</a></li>
@@ -35,16 +35,16 @@
                 <li><a href="#proyectos" class="nav-link" data-tab="04">Proyectos</a></li>
                 <li><a href="#contacto" class="nav-link" data-tab="05">Contacto</a></li>
             </ul>
- 
+
         </nav>
     </header>
- 
+
     <main>
- 
+
         <section id="inicio" class="hero">
- 
+
             <div class="hero-inner">
- 
+
                 <div class="editor-window" data-reveal>
                     <div class="editor-topbar">
                         <div class="editor-dots">
@@ -59,7 +59,7 @@
                         <pre class="code-block"><code id="typedCode"></code><span class="cursor" id="typedCursor"></span></pre>
                     </div>
                 </div>
- 
+
                 <div class="hero-cta" data-reveal>
                     <p class="hero-tagline">
                         Estudiante de Desarrollo de Software. Construyo interfaces claras,
@@ -70,23 +70,23 @@
                         <span class="btn-prompt">$</span> conocer_mas()
                     </a>
                 </div>
- 
+
             </div>
- 
+
             <a href="#sobre-mi" class="scroll-hint" aria-hidden="true">
                 <span></span>scroll
             </a>
- 
+
         </section>
- 
- 
+
+
         <section id="sobre-mi" class="about">
- 
+
             <div class="section-title" data-reveal>
                 <p class="eyebrow">// 02 — sobre-mi</p>
                 <h2>Sobre mí</h2>
             </div>
- 
+
             <div class="about-content" data-reveal>
                 <div class="about-text">
                     <span class="comment-mark">/**</span>
@@ -109,71 +109,72 @@
                     <span class="comment-mark">*/</span>
                 </div>
             </div>
- 
+
         </section>
- 
- 
+
+
         <section id="habilidades" class="skills">
- 
+
             <div class="section-title" data-reveal>
                 <p class="eyebrow">// 03 — habilidades</p>
                 <h2>Habilidades</h2>
             </div>
- 
+
             <div class="skills-container">
- 
+
                 <article class="skill-card" data-reveal data-accent="blue">
                     <div class="skill-tag">&lt;html&gt;</div>
                     <h3>HTML</h3>
                     <p>Creación de estructuras web utilizando etiquetas semánticas y buenas prácticas.</p>
                 </article>
- 
+
                 <article class="skill-card" data-reveal data-accent="violet">
                     <div class="skill-tag">.css</div>
                     <h3>CSS</h3>
                     <p>Diseño y personalización de páginas web mediante estilos, colores, layouts y animaciones.</p>
                 </article>
- 
+
                 <article class="skill-card" data-reveal data-accent="green">
                     <div class="skill-tag">git</div>
                     <h3>GitHub</h3>
                     <p>Gestión de proyectos, repositorios y control de versiones utilizando GitHub.</p>
                 </article>
- 
+
                 <article class="skill-card" data-reveal data-accent="orange">
                     <div class="skill-tag">www</div>
                     <h3>Desarrollo Web</h3>
                     <p>Desarrollo de sitios web funcionales, organizados y adaptables a diferentes dispositivos.</p>
                 </article>
- 
+
                 <article class="skill-card" data-reveal data-accent="blue">
                     <div class="skill-tag">&lt;/&gt;</div>
                     <h3>Programación</h3>
                     <p>Interés por la programación y el desarrollo de soluciones mediante diferentes tecnologías.</p>
                 </article>
- 
+
                 <article class="skill-card" data-reveal data-accent="violet">
                     <div class="skill-tag">team</div>
                     <h3>Trabajo en equipo</h3>
                     <p>Capacidad para colaborar, compartir conocimientos y participar en proyectos tecnológicos.</p>
                 </article>
- 
+
             </div>
- 
+
         </section>
- 
- 
+
+
         <section id="proyectos" class="projects">
- 
+
             <div class="section-title" data-reveal>
                 <p class="eyebrow">// 04 — proyectos</p>
                 <h2>Proyectos</h2>
             </div>
- 
+
             <div class="projects-container">
- 
+
                 <article class="project-card" data-reveal>
                     <div class="project-preview" data-accent="blue">
+                        <img src="img/proyecto1.jpg" alt="Proyecto de portafolio personal" loading="lazy">
                         <span class="project-ext">.html</span>
                     </div>
                     <div class="project-content">
@@ -186,9 +187,10 @@
                         <a href="#" class="project-link">Ver proyecto →</a>
                     </div>
                 </article>
- 
+
                 <article class="project-card" data-reveal>
                     <div class="project-preview" data-accent="green">
+                        <img src="img/proyecto2.jpg" alt="Proyecto de desarrollo web académico" loading="lazy">
                         <span class="project-ext">.edu</span>
                     </div>
                     <div class="project-content">
@@ -201,9 +203,10 @@
                         <a href="#" class="project-link">Ver proyecto →</a>
                     </div>
                 </article>
- 
+
                 <article class="project-card" data-reveal>
                     <div class="project-preview" data-accent="violet">
+                        <img src="img/proyecto3.jpg" alt="Proyecto tecnológico" loading="lazy">
                         <span class="project-ext">.tech</span>
                     </div>
                     <div class="project-content">
@@ -216,68 +219,68 @@
                         <a href="#" class="project-link">Ver proyecto →</a>
                     </div>
                 </article>
- 
+
             </div>
- 
+
         </section>
- 
- 
+
+
         <section id="contacto" class="contact">
- 
+
             <div class="section-title" data-reveal>
                 <p class="eyebrow">// 05 — contacto</p>
                 <h2>Contacto</h2>
             </div>
- 
+
             <div class="contact-container">
- 
+
                 <div class="contact-info" data-reveal>
- 
+
                     <h3>¿Tienes alguna pregunta?</h3>
- 
+
                     <p>
                         Si deseas conocer más sobre mis proyectos o
                         contactarme para hablar sobre desarrollo de software,
                         puedes utilizar el siguiente formulario.
                     </p>
- 
+
                     <div class="contact-data">
                         <p><span class="contact-key">nombre</span><span class="contact-value">Ricardo Arias</span></p>
                         <p><span class="contact-key">carrera</span><span class="contact-value">Desarrollo de Software</span></p>
                         <p><span class="contact-key">github</span><a class="contact-value contact-link" href="https://github.com/lucio200" target="_blank" rel="noopener noreferrer">github.com/lucio200</a></p>
                     </div>
- 
+
                 </div>
- 
+
                 <form class="contact-form" data-reveal>
- 
+
                     <div class="form-group">
                         <label for="nombre">Nombre</label>
                         <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
                     </div>
- 
+
                     <div class="form-group">
                         <label for="correo">Correo electrónico</label>
                         <input type="email" id="correo" name="correo" placeholder="Ingrese su correo" required>
                     </div>
- 
+
                     <div class="form-group">
                         <label for="mensaje">Mensaje</label>
                         <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escriba su mensaje" required></textarea>
                     </div>
- 
+
                     <button type="submit" class="contact-button">
                         <span class="btn-prompt">$</span> Enviar mensaje
                     </button>
- 
+
                 </form>
- 
+
             </div>
- 
+
         </section>
- 
+
     </main>
- 
+
     <footer class="footer">
         <div class="footer-content">
             <p class="terminal-line">
@@ -289,8 +292,7 @@
             <p class="footer-copy">© 2026 Ricardo Arias — Todos los derechos reservados.</p>
         </div>
     </footer>
- 
+
     <script src="script.js"></script>
 </body>
 </html>
- 
