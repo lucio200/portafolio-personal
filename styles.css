@@ -457,3 +457,39 @@ body {
 html {
     scroll-behavior: smooth;
 }
+/* Footer */
+
+.footer {
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.footer h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.footer a {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--color-blanco);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.footer a:hover {
+    color: #93c5fd;
+}
