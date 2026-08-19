@@ -26,6 +26,7 @@ portafolio-personal/
 │
 ├── index.html
 ├── styles.css
+├── script.js
 ├── README.md
 │
 └── img/
