@@ -1,106 +1,153 @@
+/* Proyectos */
 
-/* Secciones generales */
-
-.about,
-.skills {
+.projects {
     max-width: 1100px;
     margin: 0 auto;
     padding: 90px 20px;
 }
 
-.section-title {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.section-title p {
-    color: var(--color-principal);
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.section-title h2 {
-    font-size: 38px;
-    color: var(--color-secundario);
-}
-
-
-/* Sobre mí */
-
-.about-content {
-    max-width: 850px;
-    margin: 0 auto;
-}
-
-.about-text {
-    background-color: var(--color-blanco);
-    padding: 35px;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
-}
-
-.about-text p {
-    font-size: 17px;
-    line-height: 1.8;
-    margin-bottom: 20px;
-}
-
-.about-text p:last-child {
-    margin-bottom: 0;
-}
-
-
-/* Habilidades */
-
-.skills {
-    background-color: #eef4ff;
-    max-width: none;
-    padding-left: calc((100% - 1100px) / 2);
-    padding-right: calc((100% - 1100px) / 2);
-}
-
-.skills-container {
+.projects-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 25px;
+    gap: 30px;
 }
 
-.skill-card {
+.project-card {
+    width: 330px;
     background-color: var(--color-blanco);
-    width: 300px;
-    padding: 30px;
-    text-align: center;
     border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
     transition: 0.3s;
 }
 
-.skill-card:hover {
+.project-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
 }
 
-.skill-icon {
-    width: 70px;
-    height: 70px;
-    margin: 0 auto 20px;
-    border-radius: 50%;
-    background-color: var(--color-principal);
-    color: var(--color-blanco);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-content {
+    padding: 25px;
+}
+
+.project-content h3 {
+    color: var(--color-secundario);
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.project-content p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.project-link {
+    display: inline-block;
+    color: var(--color-principal);
+    text-decoration: none;
     font-weight: bold;
 }
 
-.skill-card h3 {
-    color: var(--color-secundario);
-    margin-bottom: 15px;
-    font-size: 21px;
+.project-link:hover {
+    text-decoration: underline;
 }
 
-.skill-card p {
-    line-height: 1.6;
+
+/* Contacto */
+
+.contact {
+    background-color: #eef4ff;
+    padding: 90px 20px;
+}
+
+.contact-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.contact-info,
+.contact-form {
+    flex: 1;
+}
+
+.contact-info h3 {
+    color: var(--color-secundario);
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contact-info > p {
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.contact-data {
+    background-color: var(--color-blanco);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.contact-data p {
+    margin-bottom: 12px;
+}
+
+.contact-data p:last-child {
+    margin-bottom: 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--color-secundario);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--color-principal);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.contact-button {
+    border: none;
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    padding: 14px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-button:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
 }
